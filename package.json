@@ -1,0 +1,11 @@
+{
+  "name": "fullstack_webrent",
+  "version": "1.0.0",
+  "description": "This is the fullStack website to calculate the rent which stores the data into the database and contains a frontend and backend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Arif",
+  "license": "ISC"
+}
