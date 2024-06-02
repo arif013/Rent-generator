@@ -1,0 +1,17 @@
+
+/* In your App.css or a global CSS file */
+body, html {
+  margin: 0 !important;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  font-family: "sans-serif";
+}
+
+.table-container {
+  width: 100%; /* Ensure the container takes the full width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+nav a {
+  color: white !important; /* Ensure link color is white */
+}

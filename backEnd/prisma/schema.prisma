@@ -15,7 +15,7 @@ datasource db {
 
 model User{
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  name      String
+  name      String   @unique
   address   String
   totalRent Rent[]
 }
@@ -28,6 +28,6 @@ model Rent{
   totalWaterReading    Int
   perUnit              Int
   totalAmountCalculated   Float
-  usedBy               User    @relation(fields: [usedById], references: [id])
-  usedById             String  @db.ObjectId
+  usedBy               User    @relation(fields: [usedByName], references: [name])
+  usedByName             String  
 }

@@ -1,0 +1,20 @@
+1. Phone number in the home page
+2. Change the user to apartment numbers 
+3. For example one apartment is empty in that case just inactive one apartment
+4. change the address to userName and user name to Apartment number
+5. Change the input name section to dropdown apartment number and address will be input 
+6. Add the date to the rent calculation 
+7. Final page download option Sarkar House rent
+8. Previous electricity will be deducted from the new one 
+9.  First step billing generate then next comes deposite another form which will be put by the user from which the due will be generated if there is
+10. Rent per head will be fetched from the last updated value
+11. For total water reading it will be calculated same as electricity 
+12. User details section : Electricity consumption will be shown same as water, water consumption
+13. WHen submitted in the Rent Calculation it will take to the User details page of that user
+14. Rent per Head -> Rent
+15. Per unit -> Electricity Cost
+16. Total unit = Electricity Consumed + Water unit
+17. Add another in the nav bar Collected Rent
+18. Collected Rent : Drop down apartment number, Rent deposited (value), Date, Remarks/ comments
+19. User details: Remarks, Renewal(until the agreement valid) add these two in the header 
+20. Add User: add agreement date 

@@ -22,7 +22,7 @@ exports.createUsers = async(req, res)=>{
 // Get all the users
 exports.getUsers = async(req, res)=>{
     try {
-        const result = await prisma.user.findMany({})
+        const result = await prisma.user.findMany()
         res.json(result)
     } catch (error) {
         res.send('No users found')        

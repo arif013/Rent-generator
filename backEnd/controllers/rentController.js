@@ -35,10 +35,10 @@ return totalAmountDue
 // Creating Rents
 exports.createRents = async(req, res)=>{
     try{
-        const {electricity, previousBalance, rentPerHead, totalWaterReading, perUnit, usedById} = req.body
+        const {electricity, previousBalance, rentPerHead, totalWaterReading, perUnit, usedByName} = req.body
 
         // Validate required fields
-        if (electricity === undefined || previousBalance === undefined || rentPerHead === undefined || totalWaterReading === undefined || perUnit === undefined || !usedById) {
+        if (electricity === undefined || previousBalance === undefined || rentPerHead === undefined || totalWaterReading === undefined || perUnit === undefined || !usedByName) {
             return res.status(400).json({ error: 'Please provide all the fields' });
         }
 
@@ -59,7 +59,7 @@ exports.createRents = async(req, res)=>{
                 totalWaterReading,
                 perUnit,
                 totalAmountCalculated, //Adding the extra calculated amount here which will be added to the database
-                usedBy: {connect: {id:usedById}}
+                usedBy: {connect: {name:usedByName}}
             }
         })
         res.json(result)
